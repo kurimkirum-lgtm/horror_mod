@@ -12,6 +12,7 @@ public final class HorrorMod {
 
     public HorrorMod(IEventBus modEventBus) {
         ModItems.register(modEventBus);
+        modEventBus.addListener(ModItems::addToCreativeTab);
         NeoForge.EVENT_BUS.addListener(HorrorEvents::onPlayerTick);
         NeoForge.EVENT_BUS.addListener(HorrorEvents::onBlockBreak);
         NeoForge.EVENT_BUS.addListener(HorrorEvents::onLogout);
