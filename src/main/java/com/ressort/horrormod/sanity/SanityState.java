@@ -52,6 +52,11 @@ public final class SanityState {
             addStress(frightened ? 0.12f : -0.005f);
         }
 
+        // Stress is now mechanically meaningful: prolonged danger slowly erodes sanity.
+        if (stress >= 35.0f) {
+            addSanity(-0.006f * (1.0f + (stress - 35.0f) / 65.0f));
+        }
+
         float targetPulse = 60.0f
                 + stress * 0.65f
                 + (sprinting ? 22.0f : 0.0f)
