@@ -2,5 +2,9 @@
   "item.horror_mod.old_radio": "Старое радио",
   "message.horror_mod.radio_static": "§7[РАДИО] §f...шшш... проверка связи...",
   "message.horror_mod.hud_sanity": "ПСИХИКА",
-  "message.horror_mod.hud_pulse": "ПУЛЬС"
+  "message.horror_mod.hud_pulse": "ПУЛЬС",
+  "message.horror_mod.hallucination.1": "§8Тебе показалось, что кто-то прошёл за спиной.",
+  "message.horror_mod.hallucination.2": "§8На мгновение ты услышал тихий шёпот.",
+  "message.horror_mod.hallucination.3": "§8Что-то движется между деревьями.",
+  "message.horror_mod.hallucination.4": "§8Кажется, за тобой наблюдают."
 }
