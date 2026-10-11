@@ -16,7 +16,10 @@ A Minecraft horror mod built around sound-driven entities, sanity, an analog rad
 - Unique `old_radio` item.
 - First right-click interaction for the radio.
 - English and Russian item translations.
-- Resource model placeholder.
+- Radio model using a vanilla clock texture as a temporary placeholder.
+- Game-independent sound event model and bounded recent-noise tracker.
+- Initial sanity, stress, and pulse state model.
+- GitHub Actions workflow to build with Java 21 and Gradle.
 - Offline-first design: external AI is not required for core gameplay.
 
 ## Build
@@ -57,4 +60,4 @@ A Gradle wrapper has not been added yet.
 
 ## Status
 
-This is the initial scaffold, not a complete playable horror mod. The radio currently prints a placeholder transmission. A custom texture, radio GUI, sound engine, sanity system, monster entities, and AI integrations remain to be implemented.
+This is the initial scaffold, not a complete playable horror mod. The radio currently prints a placeholder transmission. The radio still uses a temporary vanilla texture and placeholder transmission. Minecraft event integration for noise and sanity, the radio GUI, HUD, monster entities, and AI integrations remain to be implemented. The CI workflow has been added, but a successful build has not yet been confirmed.
