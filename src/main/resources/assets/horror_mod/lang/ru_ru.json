@@ -1,3 +1,6 @@
 {
-  "item.horror_mod.old_radio": "Старое радио"
+  "item.horror_mod.old_radio": "Старое радио",
+  "message.horror_mod.radio_static": "§7[РАДИО] §f...шшш... проверка связи...",
+  "message.horror_mod.hud_sanity": "ПСИХИКА",
+  "message.horror_mod.hud_pulse": "ПУЛЬС"
 }
