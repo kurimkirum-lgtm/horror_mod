@@ -22,4 +22,17 @@ class SanityStateTest {
         }
         assertTrue(state.pulse() > 60);
     }
+
+    @Test
+    void sustainedStressReducesSanity() {
+        SanityState state = new SanityState();
+        state.setStress(100);
+        float initialSanity = state.sanity();
+
+        for (int i = 0; i < 200; i++) {
+            state.tick(false, false, false, true);
+        }
+
+        assertTrue(state.sanity() < initialSanity);
+    }
 }
