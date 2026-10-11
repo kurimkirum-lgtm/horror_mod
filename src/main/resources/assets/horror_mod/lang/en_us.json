@@ -1,3 +1,6 @@
 {
-  "item.horror_mod.old_radio": "Old Radio"
+  "item.horror_mod.old_radio": "Old Radio",
+  "message.horror_mod.radio_static": "§7[RADIO] §f...static... testing the signal...",
+  "message.horror_mod.hud_sanity": "SANITY",
+  "message.horror_mod.hud_pulse": "PULSE"
 }
