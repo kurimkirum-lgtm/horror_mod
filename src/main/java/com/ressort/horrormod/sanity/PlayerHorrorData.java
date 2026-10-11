@@ -5,6 +5,7 @@ public final class PlayerHorrorData {
     private final SanityState sanity = new SanityState();
     private long lastNoiseTick = Long.MIN_VALUE;
     private long lastHudTick = Long.MIN_VALUE;
+    private long lastHallucinationTick = Long.MIN_VALUE;
 
     public SanityState sanity() {
         return sanity;
@@ -23,6 +24,14 @@ public final class PlayerHorrorData {
             return false;
         }
         lastHudTick = gameTick;
+        return true;
+    }
+
+    public boolean canTriggerHallucination(long gameTick, int interval) {
+        if (gameTick - lastHallucinationTick < interval) {
+            return false;
+        }
+        lastHallucinationTick = gameTick;
         return true;
     }
 }
