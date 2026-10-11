@@ -1,6 +1,10 @@
 {
   "item.horror_mod.old_radio": "Old Radio",
-  "message.horror_mod.radio_static": "§7[RADIO] §f...static... testing the signal...",
+  "message.horror_mod.radio_static": "§7[RADIO] §f...shhh... checking signal...",
   "message.horror_mod.hud_sanity": "SANITY",
-  "message.horror_mod.hud_pulse": "PULSE"
+  "message.horror_mod.hud_pulse": "PULSE",
+  "message.horror_mod.hallucination.1": "§8You think something just passed behind you.",
+  "message.horror_mod.hallucination.2": "§8For a moment, you hear a faint whisper.",
+  "message.horror_mod.hallucination.3": "§8Something moves between the trees.",
+  "message.horror_mod.hallucination.4": "§8You feel like you are being watched."
 }
