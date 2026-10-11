@@ -1,6 +1,8 @@
 package com.ressort.horrormod.item;
 
+import com.ressort.horrormod.event.HorrorEvents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -21,9 +23,10 @@ public final class OldRadioItem extends Item {
     ) {
         ItemStack stack = player.getItemInHand(hand);
 
-        if (!level.isClientSide) {
+        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
+            HorrorEvents.emitRadioNoise(serverPlayer);
             player.displayClientMessage(
-                    Component.literal("§7[РАДИО] §f...шшш... проверка связи..."),
+                    Component.translatable("message.horror_mod.radio_static"),
                     true
             );
         }
