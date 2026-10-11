@@ -52,6 +52,17 @@ public final class HorrorEvents {
                     data.sanity().sanity(), data.sanity().pulse()
             )), true);
         }
+
+        // Low sanity occasionally produces an unsettling message; it does not alter the world.
+        if (data.sanity().sanity() < 35.0f
+                && data.canTriggerHallucination(tick, 240)
+                && player.getRandom().nextFloat() < 0.35f) {
+            int message = player.getRandom().nextInt(1, 5);
+            player.displayClientMessage(
+                    Component.translatable("message.horror_mod.hallucination." + message),
+                    false
+            );
+        }
     }
 
     public static void onBlockBreak(BlockEvent.BreakEvent event) {
